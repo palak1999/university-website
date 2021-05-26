@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=hey, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
         #header
         {
@@ -184,8 +185,146 @@ display:block;
         border-color:black;
         }
 
+        .j
+        {
+        height:150px;
+        border-style:solid;
+        border-color:#262626;
+        background:#262626;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        }
         
-        </style>
+        .j ul{
+            display:flex;
+        }
+
+        .j ul li{
+            position: relative;
+            display: block;
+            color: #666;
+            font-size: 30px;
+            height:60px;
+            width:60px;
+            background:#171515;
+            line-height: 60px;
+            border-radius: 50%;
+            margin: 0 40px;
+            cursor:pointer;
+            transition: 0.5s;
+        }
+
+        .j ul li:before
+        {
+            position: absolute;
+            content: '';
+            top:0;
+            left:0;
+            height: 100%;
+            width:100%;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(0.9);
+            transition: o.5s;
+        }
+
+        .j ul li:nth-child(1):before
+        {
+            background: #4267B2;
+        }
+
+        .j ul li:nth-child(2):before
+        {
+            background: #1DA1F2;
+        }
+
+        .j ul li:nth-child(3):before
+        {
+            background: #E1306C;
+        }
+
+        .j ul li:nth-child(4):before
+        {
+            background: #2867B2;
+        }
+
+        .j ul li:nth-child(5):before
+        {
+            background: #ff0000;
+        }
+
+        .j ul li :hover :before
+        {
+            filter:blur(1px);
+            transform: scale(1.2);
+        }
+
+        .j ul li:nth-child(1):hover::before
+        {
+            box-shadow: 0 0 40px #4267B2;
+        }
+
+        .j ul li:nth-child(2):hover::before
+        {
+            box-shadow: 0 0 40px #1DA1F2;
+        }
+
+        .j ul li:nth-child(3):hover::before
+        {
+            box-shadow: 0 0 40px #E1306C;
+        }
+
+        .j ul li:nth-child(4):hover::before
+        {
+            box-shadow: 0 0 40px #2867B2;
+        }
+
+        .j ul li:nth-child(5):hover::before
+        {
+            box-shadow: 0 0 40px #ff0000;
+        }
+
+        .j ul li:nth-child(1):hover
+        {
+            color: #456cba;
+            box-shadow: 0 0 40px #4267B2;
+            text-shadow: 0 0 40px #4267B2;
+        }
+
+        .j ul li:nth-child(2):hover
+        {
+            color: #26a4f2;
+            box-shadow: 0 0 40px #1DA1F2;
+            text-shadow: 0 0 40px #1DA1F2;
+        }
+
+        .j ul li:nth-child(3):hover
+        {
+            color: #e23670;
+            box-shadow: 0 0 40px #E1306C;
+            text-shadow: 0 0 40px #E1306C;
+        }
+
+        .j ul li:nth-child(4):hover
+        {
+            color: #2a6cbb;
+            box-shadow: 0 0 40px #2867B2;
+            text-shadow: 0 0 40px #2867B2;
+        }
+
+        .j ul li:nth-child(5):hover
+        {
+            color: #ff1a1a;
+            box-shadow: 0 0 40px #ff0000;
+            text-shadow: 0 0 40px #ff0000;
+        }
+
+                </style>
 </head>
 <body>
     <div id="header">
@@ -312,40 +451,15 @@ The University opted for a rigorous evaluation by the National Assessment and Ac
            Photo Gallery
        </div>
        
-       <footer class="footer">
-           <div class="container">
-               <div class="row">
-                   <div class="footer-col">
-                       <h4>Apply Here</h4>
-                           <a href="#">Admissions</a><br>
-                           <a href="#">Online Admission</a><br>
-                           <a href="#">Admission Office</a><br>
-                           <a href="#">Course Fee Details</a><br>
-                           <a href="#">Pay Fee Online</a><br>
-                           <a href="#">Scholarship</a><br>
-                           <a href="#">Student Feedback</a><br>
-                           <a href="#">FAQ</a><br>
-                   </div>
+       <div class="j">
+       <ul>
+           <li><i class="fab fa-facebook-f"></i></li>
+           <li><i class="fab fa-twitter"></i></li>
+           <li><i class="fab fa-instagram"></i></li>
+           <li><i class="fab fa-linkedin-in"></i></li>
+           <li><i class="fab fa-youtube"></i></li>
+       </ul>
 
-                   <div class="footer-col">
-                    <h4>Others</h4>
-                        <a href="#">Hostels</a><br>
-                        <a href="#">Transport</a><br>
-                        <a href="#">Sports</a><br>
-                        <a href="#">Cultural Activities</a><br>
-                        <a href="#">Libraries</a><br>
-                        <a href="#">Student Welfare</a><br>
-                        <a href="#">Anti-Ragging Committee</a><br>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="Social Links">
-                        <a herf="#"></i></a>
-                    </div>
-                </div>
-               </div>
-           </div>
-       </footer>
+       </div>
     </body>
 </html>
