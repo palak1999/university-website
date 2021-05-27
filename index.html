@@ -139,13 +139,41 @@ display:block;
         }
        #e
         {
+        background-color: #92a8d1;
         height:600px;
         width:25%;
         float:left;
-        border-style:solid;
-        border-color:black;
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 100%;
+        text-align: center;
+        text-transform: uppercase;
         }
-
+        .pk
+        {
+        display:block;
+        width:60%;
+       text-align: center;
+       background-color: #26a4f2;
+        border-style:solid; 
+        padding: 5px;
+        color: white;
+        font-size: 20;
+        margin-left: 68px;
+        }
+        .sk
+        {
+            display:block;
+        width:60%;
+       text-align: center;
+       background-color: #26a4f2;
+        border-style:solid; 
+        padding: 5px ;
+        color: white;
+        font-size: 20;
+        margin-left: 68px;
+        }
         #f
         {
         height:600px;
@@ -416,8 +444,33 @@ display:block;
         <div id="rr">
            
        </div> 
-       <div id="e">
-           left buttons
+        <form>
+            <div id="e">
+            <h3 style="font-family:verdana"><p style="background-color:#92a8d1;text-shadow:1px 5px 10px #000042;">Administrator <br>Login:</p></h3>
+            <form action="#" method="post">
+            <h3>User Name</h3>
+            <input type="text" name="user" placeholder="Enter username" name="uname"><br>
+            <h3>Password</h3>
+            <input type="password" name="password" placeholder="password"><br>
+            <br>
+            <button type="button" class="pk"><b>Submit</b></button><br>
+            <span class="psw">Forgot--<a href="#">Password?</a></span>
+     <hr>
+             <h3 style="font-family:verdana"><p style="background-color:#92a8d1; text-shadow:1px 5px 10px #000042;">Student <br>Login:</p></h3>
+            <form action="#" method="post">
+            <h3>User Name</h3>
+            <input type="text" name="user" placeholder="Enter username" name="uname"><br>
+            <h3>Password</h3>
+            <input type="password" name="password" placeholder="password"><br>
+     <br>
+            <button type="button" class="sk"><b>Submit</b></button>
+            </button>
+            <span class="psw">Forgot--<a href="#">Password?</a></span>
+            
+            
+     
+            </div>
+           </form>
        </div>
        <div id="f">
         <h2 style="background-color:rgb(221, 98, 40);color:white;text-align:center;padding:3px;">NOTICES AND EVENTS</h2>
